@@ -1,3 +1,0 @@
-Hello, this is a test file for PDFtool.
-We are testing TXT to PDF conversion.
-It should work perfectly with the new backend logic.
