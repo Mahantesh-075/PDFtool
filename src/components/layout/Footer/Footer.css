@@ -1,0 +1,93 @@
+/* ============================================================
+   Footer — PDFtool
+   ============================================================ */
+
+.footer {
+  border-top: var(--glass-border);
+  background: var(--bg-surface-lowest);
+  padding: 5rem 0 2rem;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: var(--space-2xl);
+  margin-bottom: 4rem;
+}
+
+.footer__brand-desc {
+  font-size: var(--fs-sm);
+  color: var(--text-secondary);
+  margin-top: 1.5rem;
+  max-width: 320px;
+  line-height: 1.6;
+}
+
+.footer__heading {
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  list-style: none;
+}
+
+.footer__link {
+  font-size: var(--fs-sm);
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.footer__link:hover {
+  color: var(--primary);
+  transform: translateX(4px);
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.footer__copy {
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+}
+
+.footer__socials {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.footer__social {
+  color: var(--text-muted);
+  transition: all var(--transition-fast);
+}
+
+.footer__social:hover {
+  color: var(--primary);
+  filter: drop-shadow(0 0 8px var(--primary-glow));
+}
+
+@media (max-width: 768px) {
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__grid {
+    grid-template-columns: 1fr;
+  }
+}

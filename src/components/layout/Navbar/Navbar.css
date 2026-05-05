@@ -1,0 +1,168 @@
+/* ============================================================
+   Navbar — PDFtool (Premium Monochrome Redesign)
+   ============================================================ */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--navbar-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem;
+  background-color: #000000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: 1000;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar__logo-pdf {
+  color: #ffffff;
+}
+
+.navbar__logo-tool {
+  color: #888888;
+}
+
+.navbar__logo-diamond {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+  margin-left: 2px;
+  margin-bottom: 6px;
+}
+
+.navbar__nav-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar__nav {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.navbar__link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #888888;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.navbar__link:hover {
+  color: #ffffff;
+}
+
+.navbar__link--active {
+  color: #ffffff;
+}
+
+.navbar__link--active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.navbar__actions {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__cta-premium {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0.6rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.navbar__cta-premium:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-1px);
+}
+
+/* ── Mobile hamburger ── */
+.navbar__hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.navbar__hamburger-line {
+  width: 22px;
+  height: 2px;
+  background: #ffffff;
+  transition: all 0.3s ease;
+}
+
+/* ── Mobile nav ── */
+.navbar__mobile-menu {
+  display: none;
+  position: fixed;
+  top: var(--navbar-height);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000000;
+  padding: 2rem;
+  z-index: 999;
+}
+
+.navbar__mobile-menu.is-open {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  animation: fadeIn 0.2s ease;
+}
+
+.navbar__mobile-link {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #888888;
+  text-decoration: none;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.navbar__mobile-link:hover,
+.navbar__mobile-link--active {
+  color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  .navbar { padding: 0 2rem; }
+  .navbar__nav-wrapper { display: none; }
+  .navbar__actions .navbar__cta-premium { display: none; }
+  .navbar__hamburger { display: flex; }
+}

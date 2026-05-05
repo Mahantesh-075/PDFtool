@@ -1,0 +1,203 @@
+/* ============================================================
+   Home Page — PDFtool (Premium Monochrome Redesign)
+   ============================================================ */
+
+.home-page {
+  padding-top: var(--navbar-height);
+  min-height: 100vh;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Hero Section ── */
+.hero-section {
+  text-align: center;
+  padding: 8rem 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  max-width: 900px;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #a0a0a0;
+  max-width: 600px;
+  margin-bottom: 3rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.hero-actions .btn {
+  padding: 1rem 2.5rem;
+  font-weight: 700;
+  border-radius: var(--radius-full);
+}
+
+.btn-primary {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero-floating-icons {
+  display: flex;
+  gap: 2rem;
+  color: #555555;
+  margin-top: 2rem;
+}
+
+/* ── Common Section Styles ── */
+.conversions-section,
+.power-features-section {
+  padding: 6rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 4rem;
+  text-align: left;
+}
+
+/* ── Popular Conversions Grid ── */
+.conversion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.conversion-card {
+  background: #111111;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.conversion-card:hover {
+  background: #161616;
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-5px);
+}
+
+.conversion-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.icon-source, .icon-target {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.icon-arrow {
+  color: #555555;
+}
+
+.conversion-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.conversion-card-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #888888;
+}
+
+/* ── Power Features Grid ── */
+.power-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+}
+
+.power-card {
+  background: #0a0a0a;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-md);
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.power-card:hover {
+  background: #111111;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.power-icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.power-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1200px) {
+  .power-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .hero-title { font-size: 3rem; }
+  .conversion-grid { grid-template-columns: 1fr; }
+  .power-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .power-grid { grid-template-columns: 1fr; }
+}
