@@ -18,7 +18,7 @@
 **PDFtool** is a full-stack, web-based document conversion suite that transforms files between **15+ format pathways** — PDF, Word, Excel, PowerPoint, Images, HTML, and Text — all from a sleek, premium dark-themed interface. No signup. No limits. No watermarks.
 
 <p align="center">
-  <img src="C:\Users\LENOVO\Downloads\stitch_pdftool_document_conversion_suite (1)\stitch_pdftool_document_conversion_suite\pdftool_landing_page_expanded" alt="PDFtool Home" width="800">
+  <img src=" docs\pdftool\home.png" alt="PDFtool Home" width="800">
 </p>
 
 ---
