@@ -18,7 +18,7 @@
 **PDFtool** is a full-stack, web-based document conversion suite that transforms files between **15+ format pathways** — PDF, Word, Excel, PowerPoint, Images, HTML, and Text — all from a sleek, premium dark-themed interface. No signup. No limits. No watermarks.
 
 <p align="center">
-  <img src=" docs\pdftool\home.png" alt="PDFtool Home" width="800">
+  <img src="screen2.png" alt="PDFtool Home" width="800">
 </p>
 
 ---
